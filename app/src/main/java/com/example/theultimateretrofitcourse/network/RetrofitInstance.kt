@@ -7,7 +7,7 @@ object RetrofitInstance {
 
     val api : TodoApi by lazy {
         Retrofit.Builder()
-            .baseUrl("http://jsonplaceholder.typicode.com")
+            .baseUrl("https://jsonplaceholder.typicode.com")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(TodoApi::class.java)
